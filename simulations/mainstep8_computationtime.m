@@ -63,6 +63,7 @@ Xi=mexmatrixmul(Wj,Wj')/n;
 Sigma_hat=mexmatrixmul(Wj',Wj)/n;
 gamma_j=2/sqrt(n);
 alpha=2/sqrt(n);
+tic;
 Optimizeold(Sigma_hat, gamma_j, alpha, ind, Llist);
-
+toc
 
