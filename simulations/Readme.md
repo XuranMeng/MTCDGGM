@@ -31,11 +31,17 @@ The simulation codes are written in **MATLAB**. The workflow is organized into s
 - **`mainstep8.m`**  
   A small experiments for the comparison of optimization time.
 
+- **`mainstep9.m`**  
+  Gives the comparison in hypothesis testing in Section S3.2.
+
+- **`mainstep10.m`**  
+  Reports the results in Section S3.2 .
+
 ## Usage
 
 Run the files in the following order:
 
 1. `mainprepare.m`  
-2. `mainstep1.m` → `mainstep5.m` (sequentially)
+2. `mainstep1.m` → `mainstep10.m` (sequentially)
 
 This will generate synthetic data, run the regressions, compute debiased estimators, and produce the final simulation results.
