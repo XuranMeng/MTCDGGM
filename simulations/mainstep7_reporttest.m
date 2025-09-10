@@ -36,14 +36,14 @@ mean(result4list)
 std(result1list)
 std(result2list)
 std(result3list)
-std(result4list)/1.1
+std(result4list) 
 
 
-sum(abs(result1list)<1.96*1.1)/200
-sum(abs(result2list)<1.96*1.1)/200
-sum(abs(result3list)<1.96*1.1)/200
+sum(abs(result1list)<1.96)/200
+sum(abs(result2list)<1.96)/200
+sum(abs(result3list)<1.96)/200
 
-sum(sum(result4list.^2,2)<5.991*1.1)/200
+sum(sum(result4list.^2,2)<5.991)/200
 
 
 
