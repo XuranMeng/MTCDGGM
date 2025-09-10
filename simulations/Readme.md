@@ -5,7 +5,7 @@ The simulation codes are written in **MATLAB**. The workflow is organized into s
 ## File Descriptions
 
 - **`mainprepare.m`**  
-  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{Z}$.
+  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
 
 - **`mainstep1.m`**  
   Performs regression with either fixed $\lambda$ or cross-validation.
@@ -37,11 +37,30 @@ The simulation codes are written in **MATLAB**. The workflow is organized into s
 - **`mainstep10.m`**  
   Reports the results in Section S3.2 .
 
+- **`mainunknownprepare.m`**  
+  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
+
+- **`mainunknownstep1.m`**  
+  Performs regression to estimate matrix $\boldsymbol{\Gamma}$.
+
+- **`mainunknownstep2.m`**
+  Performs regression.
+ 
+- **`mainunknownstep3.m`**
+  Computes the debiased matrix.
+
+- **`mainunknownstep4.m`**  
+  Computes the debiased estimator.
+
+- **`mainunknownstep5.m`**  
+  Reports the results.
+
 ## Usage
 
 Run the files in the following order:
 
 1. `mainprepare.m`  
 2. `mainstep1.m` → `mainstep10.m` (sequentially)
+3. `mainunknownstep1.m` → `mainunknownstep5.m` (sequentially)
 
 This will generate synthetic data, run the regressions, compute debiased estimators, and produce the final simulation results.
