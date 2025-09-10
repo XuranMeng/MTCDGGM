@@ -63,4 +63,4 @@ Run the files in the following order:
 2. `mainstep1.m` → `mainstep10.m` (sequentially)
 3. `mainunknownstep1.m` → `mainunknownstep5.m` (sequentially)
 
-This will generate synthetic data, run the regressions, compute debiased estimators, and produce the final simulation results.
+This will generate synthetic data, run the regressions, compute debiased estimators, and produce the final simulation results. The corresponding .sh file helps us to submit the job to High Performance Computation Platform.
