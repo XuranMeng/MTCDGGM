@@ -1,0 +1,36 @@
+sbatch batch_script.sh
+sbatch bmain2.sh
+sbatch bmain3.sh
+sbatch bmain6.sh
+
+sbatch bmainunknown1.sh
+sbatch bmainunknown1R.sh
+sbatch bmainunknown2.sh
+sbatch bmainunknown3.sh
+sbatch bmainunknown4.sh
+
+sbatch bmain9.sh
+
+
+sbatch brpost.sh
+
+
+sbatch brdeco.sh
+
+
+scontrol update JobId=30520298 Account=yili1
+
+
+100- 60GB -5CPU
+200 - 110 GB - 5CPU
+400 - 180 GB -4 CPU
+
+
+sbatch bmainprepare.sh
+
+
+my_usage xuranm
+
+my_account_usage -A yili0
+
+my_job_statistics 29311780
