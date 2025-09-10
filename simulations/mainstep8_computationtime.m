@@ -56,10 +56,13 @@ end
 
 
 j=1;
-% Llist=[1;2;Llist];
+Llist=[1;2;Llist];
 Wj=interM;
 Wj(:,((0:q)*p+j)) = [];
 Xi=mexmatrixmul(Wj,Wj')/n;
 Sigma_hat=mexmatrixmul(Wj',Wj)/n;
+gamma_j=2/sqrt(n);
+alpha=2/sqrt(n);
+Optimizeold(Sigma_hat, gamma_j, alpha, ind, Llist);
 
 
