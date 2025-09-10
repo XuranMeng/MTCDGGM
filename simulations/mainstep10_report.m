@@ -1,7 +1,7 @@
 addpath(pwd);
 
 n=800;
-threshold=0.001;
+
 p = 70; % dimension of response
 q = 120; % dimension of covariates
 dim=(p-1)*(q+1);
@@ -22,7 +22,7 @@ TPR_ours_list=[];
 FPR_deco_list=[];
 TPR_deco_list=[];
 
-
+threshold=0.001;
 for reptition = 1:200
     disp(reptition)
     path=append("datarepo/n=",string(n),"p=",string(p),"q=",string(q),"nu=",string(nu),'/rep',string(reptition),'/');
