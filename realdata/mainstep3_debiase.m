@@ -5,8 +5,8 @@ p = 73; % dimension of response
 q = 120; % dimension of covariates
 
 
-Z0=csvread('Z0emma.csv',1,0);
-iU=csvread('iUemma.csv',1,0);
+Z0=csvread('Z0.csv',1,0);
+iU=csvread('iU.csv',1,0);
 
 path='betaandM/'
 hatbeta_mul=csvread(append(path,'hatbeta_mul.csv'));
