@@ -1,3 +1,5 @@
+% This file gives the debiasing matrix in the comparison case.
+
 mex mexfun/mexbwsolve.c
 mex mexfun/mexfwsolve.c
 mex mexfun/mexfz.c
