@@ -1,3 +1,6 @@
+% This file gives the debiasing matrix for aim 2 in the paper.
+
+
 mex mexfun/mexbwsolve.c
 mex mexfun/mexfwsolve.c
 mex mexfun/mexfz.c
@@ -67,7 +70,7 @@ parfor reptition=1:200
     end
 
     % if ~exist(path, 'dir')
-    %     mkdir(path); % 如果文件夹不存在则创建
+    %     mkdir(path); 
     % end
     for j=1:2
         beta_j=beta((1:(p-1)*(q+1))+(j-1)*(p-1)*(q+1),:);
