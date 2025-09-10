@@ -16,8 +16,8 @@ p=73
 
 q=120
 n=178
-Z0=csvread('Z0emma.csv',1,0);
-iU=csvread('iUemma.csv',1,0);
+Z0=csvread('Z0.csv',1,0);
+iU=csvread('iU.csv',1,0);
 size(Z0)
 
 [y_mul,hatbeta_mul]=mulGMMReg(Z0,iU,pools)
