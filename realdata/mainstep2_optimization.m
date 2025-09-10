@@ -31,8 +31,8 @@ Llist=find(hatbeta_mul~=0);
 
 
 
-Z0=csvread('Z0emma.csv',1,0);
-iU=csvread('iUemma.csv',1,0);
+Z0=csvread('Z0.csv',1,0);
+iU=csvread('iU.csv',1,0);
 
 interM = [];
 for j=1:(q+1)
