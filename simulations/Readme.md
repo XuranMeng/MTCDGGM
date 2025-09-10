@@ -22,6 +22,15 @@ The simulation codes are written in **MATLAB**. The workflow is organized into s
 - **`mainstep5.m`**  
   Runs OLS regression with the support set known (oracle case).
 
+- **`mainstep6.m`**  
+  Performs for Aim 2 and gives the test for the four cases.
+
+- **`mainstep7.m`**  
+  Reports the results for Aim 2.
+
+- **`mainstep8.m`**  
+  A small experiments for the comparison of optimization time.
+
 ## Usage
 
 Run the files in the following order:
