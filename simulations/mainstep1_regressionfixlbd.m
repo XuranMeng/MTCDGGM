@@ -45,23 +45,4 @@ parfor reptition= 1:Treptition
 end
 
 delete(gcp('nocreate'));
-% a=squeeze(hatbeta_sepa(1,:));
-% a=a(:);
-% size(a)
-% a(120,:)
-% find(a~=0)
 
-% reptition=3
-% path=append("datarepo/n=",string(n),"p=",string(p),"q=",string(q),"nu=",string(nu),'/rep',string(reptition),'/');
-% hatbeta_mul=csvread(append(path,'hatbeta_mul.csv'));
-% hatbeta_sepa=csvread(append(path,'hatbeta_sepa.csv'));
-
-% hatbeta_mul(hatbeta_mul~=0)';
-% hatbeta_mul(abs(hatbeta_mul)>0.1)';
-
-% hatbeta_sepa(hatbeta_sepa~=0)';
-% hatbeta_sepa(abs(hatbeta_sepa)>0.1)';
-
-
-% A = [1 2 3; 4 5 6; 7 8 9] % Example matrix
-% reshape(A,[],1) % convert matrix to column vector
