@@ -21,28 +21,7 @@ Treptition=200;
 path=append("datarepo/n=",string(n),"p=",string(p),"q=",string(q),"nu=",string(nu),'/');
     
 beta=csvread(append(path,'beta.csv'));
-% find(beta~=0)'
 
-% Z0=csvread('Z0.csv',1,0); %Z0 is the response matrix of n*p
-% iU=csvread('iU.csv',1,0);
-
-
-% path=append("datarepo/n=",string(n),"p=",string(p),"q=",string(q),"nu=",string(nu),'/rep',string(1),'/');
-% Z0=csvread(append(path,'Z0.csv'));
-% iU=csvread(append(path,'iU.csv'));
-
-
-
-% [y_mul,hatbeta_sepa]=sepaGMMReg(Z0,iU);
-% hatbeta_sepa(abs(hatbeta_sepa)>0.10);
-% a=reshape(hatbeta_sepa',[],1);
-% a(abs(a)>0.00)
-
-
-
-
-% rng(1118)
-% generate(n,p,q,nu,200);
 
 parpool('local', 5) 
 
