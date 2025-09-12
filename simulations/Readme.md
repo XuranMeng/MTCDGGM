@@ -4,56 +4,39 @@ The simulation codes are written in **MATLAB**. The workflow is organized into s
 
 ## File Descriptions
 
-- **`mainprepare.m`**  
-  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
+- **`mainprepare.m`**  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
 
-- **`mainstep1.m`**  
-  Performs regression with either fixed $\lambda$ or cross-validation.
+- **`mainstep1.m`**  Performs regression with either fixed $\lambda$ or cross-validation.
+  
+- **`mainstep2.m`**  Computes the debiased matrix.
+  
+- **`mainstep3.m`**  Computes the debiased estimator.
 
-- **`mainstep2.m`**  
-  Computes the debiased matrix.
+- **`mainstep4.m`**  Reports the results of our proposed methods.
 
-- **`mainstep3.m`**  
-  Computes the debiased estimator.
+- **`mainstep5.m`**  Runs OLS regression with the support set known (oracle case).
 
-- **`mainstep4.m`**  
-  Reports the results of our proposed methods.
-
-- **`mainstep5.m`**  
-  Runs OLS regression with the support set known (oracle case).
-
-- **`mainstep6.m`**  
-  Performs for Aim 2 and gives the test for the four cases.
-
-- **`mainstep7.m`**  
-  Reports the results for Aim 2.
-
-- **`mainstep8.m`**  
-  A small experiments for the comparison of optimization time.
-
-- **`mainstep9.m`**  
-  Gives the comparison in hypothesis testing in Section S3.2.
-
-- **`mainstep10.m`**  
-  Reports the results in Section S3.2 .
-
-- **`mainunknownprepare.m`**  
-  Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
-
-- **`mainunknownstep1.m`**  
-  Performs regression to estimate matrix $\boldsymbol{\Gamma}$.
-
-- **`mainunknownstep2.m`**
-  Performs regression.
+- **`mainstep6.m`**  Performs for Aim 2 and gives the test for the four cases.
  
-- **`mainunknownstep3.m`**
-  Computes the debiased matrix.
+- **`mainstep7.m`**  Reports the results for Aim 2.
 
-- **`mainunknownstep4.m`**  
-  Computes the debiased estimator.
+- **`mainstep8.m`**  A small experiments for the comparison of optimization time.
 
-- **`mainunknownstep5.m`**  
-  Reports the results.
+- **`mainstep9.m`**  Gives the comparison in hypothesis testing in Section S3.2. 
+
+- **`mainstep10.m`** Reports the results in Section S3.2.
+
+- **`mainunknownprepare.m`** Generates the synthetic data $\mathbf{Z}$ and $\mathbf{U}$.
+
+- **`mainunknownstep1.m`** Performs regression to estimate matrix $\boldsymbol{\Gamma}$.
+ 
+- **`mainunknownstep2.m`** Performs regression.
+ 
+- **`mainunknownstep3.m`** Computes the debiased matrix.
+  
+- **`mainunknownstep4.m`** Computes the debiased estimator.
+
+- **`mainunknownstep5.m`** Reports the results.
 
 ## Usage
 
