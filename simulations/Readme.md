@@ -45,5 +45,6 @@ Run the files in the following order:
 1. `mainprepare.m`  `mainunknownprepare.m` 
 2. `mainstep1.m` → `mainstep10.m` (sequentially)
 3. `mainunknownstep1.m` → `mainunknownstep5.m` (sequentially)
+4. comparemethod gives the code for the comparison methods
 
 This will generate synthetic data, run the regressions, compute debiased estimators, and produce the final simulation results. The corresponding .sh file helps us to submit the job to the High Performance Computing (HPC) platform.
