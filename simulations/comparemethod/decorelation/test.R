@@ -246,10 +246,10 @@ results<-foreach (rep0 = 1:200,.combine = 'rbind',.packages = c("glmnet","mvtnor
 stopCluster(cl)
 
 
-# write.csv(result_bias,paste0(path,'/','postselection_bias.csv'),row.names = FALSE)
+write.csv(result_bias,paste0(path,'/','postselection_bias.csv'),row.names = FALSE)
 
-# write.csv(result_len,paste0(path,'/','postselection_len.csv'),row.names = FALSE)
+write.csv(result_len,paste0(path,'/','postselection_len.csv'),row.names = FALSE)
 
-# write.csv(result_count,paste0(path,'/','postselection_count.csv'),row.names = FALSE)
+write.csv(result_count,paste0(path,'/','postselection_count.csv'),row.names = FALSE)
 
-# write.csv(result_rej,paste0(path,'/','postselection_rej.csv'),row.names = FALSE)
+write.csv(result_rej,paste0(path,'/','postselection_rej.csv'),row.names = FALSE)
